@@ -1,0 +1,3 @@
+# Sentinel Alert Triage Assistant
+
+Sentinel generates alerts but SOC analysts spend enormous time reading them, correlating context, and deciding priority. Build a system where Sentinel alerts are exported via Logic Apps or the Sentinel API, passed to an LLM (GPT-4 via Azure OpenAI or a local model like Mistral), and the LLM produces a plain-English triage summary including likely attack type, affected assets, recommended response, and severity reasoning. The output gets written back into Sentinel as a comment or into a dashboard. This mirrors what commercial tools like Microsoft Copilot for Security actually do, which means you are building a simplified version of a product that sells for enterprise prices.
